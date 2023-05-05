@@ -1,0 +1,33 @@
+Title: Hands-on Cybersecurity Project: Setting up a Home Lab on VMware.
+
+Overview: In this project, I set up a home lab using VMware to practice and develop my skills in cybersecurity. The lab consists of two virtual machines, Kali Linux and Windows, and is configured to simulate real-world scenarios.
+
+Tools and Technologies Used: VMware, Kali Linux, Microsoft Windows, Metasploit, Wireshark
+
+Steps:
+
+1.	Installing VMware: I downloaded and installed VMware Workstation Fusion on my laptop.
+2.	Creating the virtual machines: I created two virtual machines - Kali Linux and Windows - using the VMware Wizard. I allocated 4GB of RAM and 80GB of storage to each virtual machine.
+3.	Installing Kali Linux: I downloaded the Kali Linux ISO image and mounted it to the virtual CD/DVD drive of the Kali Linux virtual machine. I installed Kali Linux by following the on-screen instructions.
+4.	Installing Windows: I downloaded the Windows ISO image and mounted it to the virtual CD/DVD drive of the Windows virtual machine. I installed Windows by following the on-screen instructions.
+5.	Configuring the network: I configured the virtual network adapters for each virtual machine to connect to the internet and communicate with each other. I selected the NAT (Network Address Translation) option for both Kali Linux and Windows VM.
+6.	Updating the virtual machines: I updated both virtual machines with the latest software and security patches.
+7.	Configuring Kali Linux: I configured Kali Linux by installing the necessary tools and utilities for cybersecurity such as Wireshark, Metasploit, Nmap, Firewall(ufw) and Nikto
+8.	Configuring Windows: I configured Windows by installing the necessary tools and utilities for cybersecurity such as antivirus software, firewall, and password manager.
+9.	Simulating real-world scenarios: I used the lab to simulate real-world scenarios such as network scanning and vulnerability assessment.
+10.	Documenting the lab: I documented the lab by taking screenshots of the virtual machines, the network configuration, and the software installation process. I also created a brief description of each tool and utility installed in the lab.
+
+
+Results Achieved:
+
+Successfully created a virtual environment for cybersecurity testing and experimentation.
+Developed proficiency in using VMware, Kali Linux, Microsoft Windows, Wireshark and network scanning
+Acquired hands-on experience in conducting cybersecurity testing and analysis in a safe and controlled environment.
+
+Conclusion: Building a home lab on VMware allowed me to practice and develop my skills in cybersecurity in a safe and controlled environment. The lab is a valuable resource for learning and experimentation, and I will continue to use it to improve my knowledge and expertise in the field.
+
+The problem encountered: I wasn’t able to ping the Windows VM ip from the Kali VM. The issue was that the ICMP protocol was being blocked by the Windows firewall, which was preventing the Kali VM from pinging the Windows VM. By enabling the "File and Printer Sharing (Echo Request - ICMPv4-In)" rule on the Windows firewall through PowerShell, I allowed the ICMP protocol to pass through and the Kali VM was able to successfully ping the Windows VM.
+
+Conclusion: Building a home lab on VMware allowed me to practice and develop my skills in cybersecurity in a safe and controlled environment. The lab is a valuable resource for learning and experimentation, and I will continue to use it to improve my knowledge and expertise in the field. I encountered a small issue during the setup process - I wasn’t able to ping the Windows VM IP from the Kali VM due to the Windows firewall blocking the ICMP protocol. However, I was able to resolve this by enabling the "File and Printer Sharing (Echo Request - ICMPv4-In)" rule on the Windows firewall through PowerShell.
+
+
